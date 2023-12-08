@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li,
+ol,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.app {
+    width: 100%;
+    min-height: 917px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDF4;
+
+    .wrapper {
+
+        .course {
+            display: grid;
+            gap: 40px;
+        }
+    }
+
+    .course {
+        .course--head {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .course--title {
+                h2 {
+                    color: #374639;
+                    font-size: 45px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 53px;
+                    letter-spacing: -2.25px;
+                }
+            }
+
+            .course--content {
+                width: 519px;
+
+                p {
+                    color: #3F514B;
+                    font-family: Poppins;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px;
+                }
+            }
+        }
+
+        .course--container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 23px;
+
+            .course--card {
+                display: grid;
+                gap: 18px;
+
+                .card--img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .card--content {
+                    display: grid;
+                    gap: 20px;
+
+                    .card--wrap-head {
+                        display: grid;
+                        gap: 8px;
+                    }
+
+                    .card--title {
+                        color: #414F42;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 25px;
+                        letter-spacing: -0.4px;
+                        text-transform: capitalize;
+                    }
+
+                    .card--text {
+                        width: 308px;
+                        color: #3F514B;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    .card--price {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 6px;
+                        color: #3F514B;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 23px;
+                        text-transform: uppercase;
+                    }
+
+                    .card--price-old {
+                        font-size: 13px;
+                        color: #72776C;
+                        text-decoration: line-through;
+                    }
+
+                    .card--progress {
+
+                        .card--list {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            gap: 24px;
+                            padding: 12px 0;
+                            border-top: 1px solid #ECEDEC;
+
+                            &:last-child {
+                                border-bottom: 1px solid #ECEDEC;
+
+                            }
+
+
+                            .card--list-title {
+                                color: #72776C;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 18px;
+                                letter-spacing: 0.15px;
+                                text-transform: uppercase;
+                            }
+
+                            .card--list-content {
+                                color: #4E5C58;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 575.98px) {
+    .app {
+        width: 100%;
+
+        .wrapper {
+
+            width: 100%;
+            padding: 16px 12px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            .course {
+                gap: 32px;
+
+                .course--head {
+                    gap: 16px;
+
+                    .course--title {
+                        h2 {
+                            font-size: 32px;
+                        }
+                    }
+
+                    .course--content {
+                        width: 100%;
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .course--container {
+                    grid-template-columns: repeat(1, 1fr);
+
+                    .card--content {
+                        .card--title {
+                            font-size: 18px;
+                        }
+
+                        .card--text {
+                            font-size: 16px;
+                        }
+
+                        .card--progress {
+                            .card--list {
+                                .card--list-title {
+                                    font-size: 14px;
+                                }
+
+                                .card--list-content {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 958.98px) {
+    .app {
+        width: 100%;
+
+        .wrapper {
+            padding: 0 12px;
+            width: 100%;
+            padding: 16px 12px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            .course {
+                gap: 32px;
+
+                .course--head {
+                    gap: 16px;
+
+                    .course--title {
+                        h2 {
+                            font-size: 32px;
+                        }
+                    }
+
+                    .course--content {
+                        width: 100%;
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .course--container {
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .card--content {
+                        .card--title {
+                            font-size: 18px;
+                        }
+
+                        .card--text {
+                            font-size: 16px;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1170px) {
+    .app {
+        width: 100%;
+
+        .wrapper {
+            padding: 0 16px;
+            width: 100%;
+            padding: 0 16px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            .course {
+
+                .course--head {
+                    .course--title {}
+
+                    .course--content {
+                        width: 100%;
+                    }
+                }
+
+                .course--container {
+                    grid-template-columns: repeat(3, 1fr);
+
+                    .card--content {
+                        .card--title {
+                            font-size: 18px;
+                        }
+
+                        .card--text {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
