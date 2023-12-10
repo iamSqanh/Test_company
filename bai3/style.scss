@@ -24,21 +24,20 @@ a {
 
 
 .app {
-    width: 100%;
+    width: 1920px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .wrapper {
-        width: 1920px;
+        width: 100%;
 
         .book--detail {
             width: 100%;
             min-height: 835px;
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 10px;
-            gap: 32px;
+
 
             padding-top: 126px;
 
@@ -65,7 +64,6 @@ a {
 
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 32px;
             }
 
             .book--chapter {
@@ -161,6 +159,8 @@ a {
 @media only screen and (max-width: 638.99px) {
 
     .app {
+        width: 100%;
+
         .wrapper {
             width: 100%;
             padding: 0 16px 24px 16px;
@@ -219,6 +219,8 @@ a {
 @media (min-width: 640px) and (max-width: 1068px) {
 
     .app {
+        width: 100%;
+
         .wrapper {
             width: 100%;
             padding: 0 16px 24px 16px;

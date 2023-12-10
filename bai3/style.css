@@ -20,21 +20,19 @@ a {
 }
 
 .app {
-  width: 100%;
+  width: 1920px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .app .wrapper {
-  width: 1920px;
+  width: 100%;
 }
 .app .wrapper .book--detail {
   width: 100%;
   min-height: 835px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 10px;
-  gap: 32px;
   padding-top: 126px;
 }
 .app .wrapper .book--detail .book--title {
@@ -56,7 +54,6 @@ a {
   grid-column: 2/span 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
 }
 .app .wrapper .book--detail .book--chapter .book--chapter-wrap {
   padding: 19px 0;
@@ -124,6 +121,9 @@ a {
 }
 
 @media only screen and (max-width: 638.99px) {
+  .app {
+    width: 100%;
+  }
   .app .wrapper {
     width: 100%;
     padding: 0 16px 24px 16px;
@@ -163,6 +163,9 @@ a {
   }
 }
 @media (min-width: 640px) and (max-width: 1068px) {
+  .app {
+    width: 100%;
+  }
   .app .wrapper {
     width: 100%;
     padding: 0 16px 24px 16px;
