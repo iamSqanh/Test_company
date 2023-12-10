@@ -24,13 +24,14 @@ a {
 
 
 .app {
-    width: 1920px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .wrapper {
-        width: 100%;
+        width: 1920px;
+
 
         .book--detail {
             width: 100%;
@@ -61,7 +62,7 @@ a {
 
             .book--col {
                 grid-column: 2 / span 2;
-
+                gap: 26px;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
