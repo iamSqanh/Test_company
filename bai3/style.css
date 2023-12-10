@@ -121,7 +121,7 @@ a {
   background: url("https://res.cloudinary.com/dclafzgo9/image/upload/v1701999171/test_company/image_120_ldbvxy.png") lightgray 50%/cover no-repeat;
 }
 
-@media only screen and (max-width: 638.99px) {
+@media only screen and (max-width: 640px) {
   .app {
     width: 100%;
   }
@@ -163,7 +163,7 @@ a {
     background: url("https://res.cloudinary.com/dclafzgo9/image/upload/v1701999171/test_company/image_120_ldbvxy.png") lightgray 50%/cover no-repeat;
   }
 }
-@media (min-width: 640px) and (max-width: 1068px) {
+@media (min-width: 641px) and (max-width: 1068px) {
   .app {
     width: 100%;
   }
